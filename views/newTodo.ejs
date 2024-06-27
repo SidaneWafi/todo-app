@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo APP</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="table-container">
+        <h2 class="todo-title"><%=title %></h2>
+        <div>
+            <a class="" href="/">Back</a>
+            <form action="/add-todo" method="post">
+                <div class="new-todo">
+                    <div class="form-group">
+                        <label for="title" class="text-light">Title</label>
+                        <input
+                        type="text"
+                        name="title"
+                        value=""
+                        placeholder="type todo her"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="Description" class="text-light">Description</label>
+                        <input
+                        type="text"
+                        name="desc"
+                        value=""
+                        placeholder="type Description here"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Save</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
